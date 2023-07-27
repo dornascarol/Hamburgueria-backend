@@ -16,7 +16,8 @@
     "pg": "^8.11.1",
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.32.1",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "yup": "^1.2.0"
   },
   "devDependencies": {
     "eslint": "^8.0.1",
