@@ -47,6 +47,18 @@ O <a href="https://yarnpkg.com/package?name=sucrase" target="_blank"> Sucrase </
 
 ~
 
+O <a href="https://yarnpkg.com/package?name=eslint" target="_blank"> Eslint </a> na versão 8.0.1
+
+:small_orange_diamond: `yarn add eslint -D`
+
+~
+
+O <a href="https://yarnpkg.com/package?name=prettier" target="_blank"> Prettier </a> nas versões 8.8.0 e 5.0.0
+
+:small_orange_diamond: `yarn add prettier eslint-config-prettier eslint-plugin-prettier -D`
+
+~
+
 ## Rodando o projeto
 Para rodar o repositório é necessário clonar o mesmo.  
 Pra inicar escreva no terminal:
