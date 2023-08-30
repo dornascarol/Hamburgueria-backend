@@ -5,13 +5,14 @@
 <p> Usuário pode se cadastrar na aplicação, escolher os pedidos e verificar o carrinho de compras. </p>
 
 <h2> Introdução </h2>
-<p> O usuário vai poder se cadastrar e logar na aplicação com seus dados de e-mail e senha. Depois de logado, ele pode escolher um hambúrguer e complementos. Por fim, o usuário pode clicar no carrinho e realizar a compra. </p>
+<p> Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário vai poder se cadastrar e logar com seus dados de e-mail e senha. Depois de logado, ele pode escolher um hambúrguer e complementos. Por fim, o usuário pode clicar no carrinho e realizar a compra. </p>
 
 ## Tecnologias utilizadas
 * VS Code
 * Yarn
 * Node.JS
 * Express.JS
+* Docker
 * 
 
 ## Ferramentas
@@ -19,9 +20,13 @@ Na aplicação foi utilizado o <a href="https://nodejs.org/en/download" target="
 
 ~
 
-O <a href="https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable"> Yarn </a> na versão 1.22.19
+O <a href="https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable" target="_blank" > Yarn </a> na versão 1.22.19
 
 :small_orange_diamond: `npm install -g yarn` ou `sudo npm install -g yarn` 
+
+~
+
+O <a href="https://www.docker.com/get-started/" target="_blank" > Docker </a> na versão 4.21.1.0
 
 ~
 
