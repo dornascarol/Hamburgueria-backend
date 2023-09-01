@@ -5,7 +5,7 @@
 <p> Usuário pode se cadastrar na aplicação, escolher os pedidos e verificar o carrinho de compras. </p>
 
 <h2> Introdução </h2>
-<p> Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado, ele escolhe um hambúrguer e complementos. Por fim, o usuário pode clicar no carrinho e realizar a compra. </p>
+<p> Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado, ele escolhe uma variedade de hambúrguer e complementos. Por fim, o usuário pode clicar no carrinho e realizar a compra. </p>
 
 ## Tecnologias utilizadas
 * VS Code
@@ -15,6 +15,7 @@
 * Docker
 * PostgreSQL
 * Postbird
+* Sequelize (ORM)
 * 
 
 ## Ferramentas
@@ -33,9 +34,16 @@ O <a href="https://www.docker.com/get-started/" target="_blank" > Docker </a> na
 
 ~
 
-O <a href="https://github.com/Paxa/postbird" target="_blank"> Postbird </a> na versão instalado em Postbird.Setup.0.8.4.exe
+O <a href="https://github.com/Paxa/postbird" target="_blank"> Postbird </a> na versão instalada em Postbird.Setup.0.8.4.exe
 
 ~
+
+O <a href="https://sequelize.org/docs/v6/getting-started/" target="_blank"> Sequelize </a> na versão 6.32.1
+
+:small_orange_diamond: `yarn add sequelize`
+
+~
+
 
 ## Dependências 
 Framework <a href="https://www.npmjs.com/package/express" target="_blank" > Express </a> na versão 4.18.2 
@@ -68,6 +76,12 @@ O <a href="https://yarnpkg.com/package?name=eslint" target="_blank"> Eslint </a>
 O <a href="https://yarnpkg.com/package?name=prettier" target="_blank"> Prettier </a> nas versões 8.8.0 e 5.0.0
 
 :small_orange_diamond: `yarn add prettier eslint-config-prettier eslint-plugin-prettier -D`
+
+~
+
+O <a href="https://yarnpkg.com/package?name=eslint" target="_blank"> Sequelize-cli </a> na versão 6.6.1
+
+:small_orange_diamond: `yarn add sequelize-cli -D`
 
 ~
 
