@@ -5,7 +5,7 @@
 <p> Usuário pode se cadastrar na aplicação, escolher os pedidos e verificar o carrinho de compras. </p>
 
 <h2> Introdução </h2>
-<p> Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário vai poder se cadastrar e logar com seus dados de e-mail e senha. Depois de logado, ele pode escolher um hambúrguer e complementos. Por fim, o usuário pode clicar no carrinho e realizar a compra. </p>
+<p> Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado, ele escolhe um hambúrguer e complementos. Por fim, o usuário pode clicar no carrinho e realizar a compra. </p>
 
 ## Tecnologias utilizadas
 * VS Code
@@ -13,6 +13,8 @@
 * Node.JS
 * Express.JS
 * Docker
+* PostgreSQL
+* Postbird
 * 
 
 ## Ferramentas
@@ -26,7 +28,12 @@ O <a href="https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable" tar
 
 ~
 
-O <a href="https://www.docker.com/get-started/" target="_blank" > Docker </a> na versão 4.21.1.0
+O <a href="https://www.docker.com/get-started/" target="_blank" > Docker </a> na versão 24.0.2
+
+
+~
+
+O <a href="https://github.com/Paxa/postbird" target="_blank"> Postbird </a> na versão instalado em Postbird.Setup.0.8.4.exe
 
 ~
 
@@ -38,7 +45,7 @@ Framework <a href="https://www.npmjs.com/package/express" target="_blank" > Expr
 ~
 
 ## Dependência de desenvolvimento
-O <a href="https://classic.yarnpkg.com/en/package/nodemon"> Nodemon </a> na versão 3.0.1
+O <a href="https://classic.yarnpkg.com/en/package/nodemon" target="_blank" > Nodemon </a> na versão 3.0.1
 
 :small_orange_diamond: `yarn add nodemon -D`
   
