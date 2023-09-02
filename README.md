@@ -5,7 +5,9 @@
 <p> Usuário pode se cadastrar na aplicação, escolher os pedidos e verificar o carrinho de compras. </p>
 
 <h2> Introdução </h2>
-<p> Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado, ele escolhe uma variedade de hambúrguer e complementos. Por fim, o usuário pode clicar no carrinho e realizar a compra. </p>
+Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado, ele escolhe uma variedade de hambúrgueres e complementos. Por fim, o usuário pode clicar no carrinho e realizar a compra. 
+
+Além de um painel administrativo onde o representante do estabelecimento consegue ver todos os pedidos e seus status. 
 
 ## Tecnologias utilizadas
 * VS Code
@@ -16,6 +18,7 @@
 * PostgreSQL
 * Postbird
 * Sequelize (ORM)
+* UUID (v4)
 * 
 
 ## Ferramentas
@@ -29,7 +32,7 @@ O <a href="https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable" tar
 
 ~
 
-O <a href="https://www.docker.com/get-started/" target="_blank" > Docker </a> na versão 24.0.2
+O <a href="https://www.docker.com/get-started/" target="_blank" > Docker </a> na configuração para computador 4.21.1 e versão 24.0.2
 
 
 ~
@@ -44,11 +47,18 @@ O <a href="https://sequelize.org/docs/v6/getting-started/" target="_blank"> Sequ
 
 ~
 
+Foi usado o programa <a href="https://insomnia.rest/download" target="_blank" > Insomnia </a> para testar as requisições das rotas simulando o Front-end.
+
+~
 
 ## Dependências 
-Framework <a href="https://www.npmjs.com/package/express" target="_blank" > Express </a> na versão 4.18.2 
+Framework <a href="https://yarnpkg.com/package?name=express" target="_blank" > Express </a> na versão 4.18.2 
 
 :small_orange_diamond: `yarn add express`
+
+~
+
+Biblioteca <a href="https://yarnpkg.com/package?name=uuidv4" target="_blank" > UUID </a> do tipo v.4 e na versão 9.0.0
 
 ~
 
@@ -79,30 +89,48 @@ O <a href="https://yarnpkg.com/package?name=prettier" target="_blank"> Prettier 
 
 ~
 
-O <a href="https://yarnpkg.com/package?name=eslint" target="_blank"> Sequelize-cli </a> na versão 6.6.1
+O <a href="https://yarnpkg.com/package?name=sequelize-cli" target="_blank"> Sequelize-cli </a> na versão 6.6.1
 
 :small_orange_diamond: `yarn add sequelize-cli -D`
 
 ~
 
 ## Rodando o projeto
-Para rodar o repositório é necessário clonar o mesmo.  
-Pra inicar escreva no terminal:
+- Para rodar o repositório é necessário clonar o mesmo.
+  
+- Pra inicar escreva no terminal:
 ```
 npm init -y
 ```
-Após instaladas as dependências, dê o comando seguinte para rodar a aplicação:
+
+- Após instaladas as dependências, dê o comando seguinte para rodar a aplicação:
 ```
 yarn dev
 ```
-Parar de rodar o servidor: no terminal clicar nas teclas de "Ctrl" e "C".
 
-Para debugar:
+- Parar de rodar o servidor: no terminal clicar nas teclas de "Ctrl" e "C".
+
+- Para debugar:
 ```
 yarn debug
 ```
 
-Utilizei o Insomnia para realizar as requisições desejadas.
+- Para usar o Sequelize com o PostgreSQL, precisa instalar:
+```
+yarn add pg pg-hstore
+```
+
+- Para rodar a Migration:
+```
+yarn sequelize db:migrate
+```
+
+- Para desfazer todas as Migrations:
+```
+yarn sequelize db:migrate:undo:all
+```
+
+- Utilizei o Insomnia para realizar as requisições desejadas.
 
 ## Middlewares
 ```js
@@ -117,6 +145,19 @@ routes() {
     this.app.use(routes)
   }
 ```
+## Migrations
+Criações de tabelas para o banco de dados. 
+
+Precisa estar, primeiramente, com o Docker rodando. 
+
+- Tabela de Usuários:
+  - id
+  - name
+  - email
+  - password_hash
+  - admin
+  - created_at
+  - updated_at 
 
 ## Status do projeto
 :construction: O projeto está em andamento. 
