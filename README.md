@@ -19,6 +19,7 @@ Além de um painel administrativo onde o representante do estabelecimento conseg
 * Postbird
 * Sequelize (ORM)
 * UUID (v4)
+* Yup
 * 
 
 ## Ferramentas
@@ -59,6 +60,14 @@ Framework <a href="https://yarnpkg.com/package?name=express" target="_blank" > E
 ~
 
 Biblioteca <a href="https://yarnpkg.com/package?name=uuidv4" target="_blank" > UUID </a> do tipo v.4 e na versão 9.0.0
+
+:small_orange_diamond: `yarn add uuid`
+
+~
+
+Biblioteca <a href="https://github.com/jquense/yup" target="_blank"> Yup </a> na versão 1.2.0
+
+:small_orange_diamond: `yarn add yup`
 
 ~
 
@@ -103,7 +112,7 @@ O <a href="https://yarnpkg.com/package?name=sequelize-cli" target="_blank"> Sequ
 npm init -y
 ```
 
-- Após instaladas as dependências, dê o comando seguinte para rodar a aplicação:
+- Após instaladas as dependências, dê o comando seguinte para rodar a aplicação do servidor:
 ```
 yarn dev
 ```
