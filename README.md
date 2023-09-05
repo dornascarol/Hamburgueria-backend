@@ -166,7 +166,18 @@ Precisa estar, primeiramente, com o Docker rodando.
   - password_hash
   - admin
   - created_at
-  - updated_at 
+  - updated_at
+ 
+## Controllers
+Padrão do objeto que espero receber no Insomnia.
+- Schema do UserController.
+
+```js
+name: Yup.string().required(),
+email: Yup.string().email().required(),
+password: Yup.string().required().min(6),
+admin: Yup.boolean(),
+```
 
 ## Status do projeto
 :construction: O projeto está em andamento. 
