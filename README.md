@@ -11,6 +11,7 @@ Além de um painel administrativo onde o representante do estabelecimento conseg
 
 ## Tecnologias utilizadas
 * VS Code
+* Insomnia
 * Yarn
 * Node.JS
 * Express.JS
@@ -20,6 +21,7 @@ Além de um painel administrativo onde o representante do estabelecimento conseg
 * Sequelize (ORM)
 * UUID (v4)
 * Yup
+* Bcrypt
 * 
 
 ## Ferramentas
@@ -68,6 +70,12 @@ Biblioteca <a href="https://yarnpkg.com/package?name=uuidv4" target="_blank" > U
 Biblioteca <a href="https://github.com/jquense/yup" target="_blank"> Yup </a> na versão 1.2.0
 
 :small_orange_diamond: `yarn add yup`
+
+~
+
+Biblioteca <a href="https://yarnpkg.com/package?name=bcrypt" target="_blank"> Bcrypt </a> na versão 5.1.0 
+
+:small_orange_diamond: `yarn add bcrypt`
 
 ~
 
@@ -137,6 +145,11 @@ yarn sequelize db:migrate
 - Para desfazer todas as Migrations:
 ```
 yarn sequelize db:migrate:undo:all
+```
+
+- Para rodar o banco de dados:
+```
+docker start codeburguer-postgres
 ```
 
 - Utilizei o Insomnia para realizar as requisições desejadas.
