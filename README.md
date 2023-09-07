@@ -183,7 +183,8 @@ Precisa estar, primeiramente, com o Docker rodando.
  
 ## Controllers
 Padrão do objeto que espero receber no Insomnia.
-- Schema do UserController.
+
+##### Schema do User para criação do usuário:
 
 ```js
 name: Yup.string().required(),
@@ -191,6 +192,21 @@ email: Yup.string().email().required(),
 password: Yup.string().required().min(6),
 admin: Yup.boolean(),
 ```
+~
+
+##### Schema do Session para fazer o login do usuário:
+
+```js
+email: Yup.string().email().required(),
+password: Yup.string().required(),
+```
+
+- Se o _email_ ou _senha_ não forem encontrados:
+
+  - Responde status HTTP com o código `400` (Bad Request)
+  - Retorna o seguinte JSON: `{ error: 'Email ou senha incorreto' }`
+
+~
 
 ## Status do projeto
 :construction: O projeto está em andamento. 
