@@ -154,6 +154,15 @@ docker start codeburguer-postgres
 
 - Utilizei o Insomnia para realizar as requisições desejadas.
 
+## Endpoints
+<p> Caminho da URL: http://localhost:3000 </p>
+
+| Método | URL            | Descrição                                                                                                  |
+| ------ | -------------- | ------------------------------------------------------------------------------------------------------     |
+| POST   | /users         | Cria um usuário usando as informações enviadas dentro do arquivo `request body`.                           |
+| POST   | /sessions      | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.      |
+
+
 ## Middlewares
 ```js
 middlewares() {
