@@ -192,6 +192,22 @@ email: Yup.string().email().required(),
 password: Yup.string().required().min(6),
 admin: Yup.boolean(),
 ```
+
+- Se encontrar algum dado _inválido_:
+
+  - Responde status HTTP com o código `400` (Bad Request)
+  - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+
+- Se encontrar um _email_ já existente:
+
+  - Responde status HTTP com o código `400` (Bad Request)
+  - Retorna o seguinte JSON: `{ error: 'E-mail já cadastrado' }`
+ 
+- Criando com sucesso um _usuário_:
+
+  - Responde status HTTP com o código `201` (Created)
+  - Retorna o seguinte JSON: `{ id: user.id, name, email, admin  }`
+    
 ~
 
 ##### Schema do Session para fazer o login do usuário:
