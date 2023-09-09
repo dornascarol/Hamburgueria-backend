@@ -226,11 +226,16 @@ email: Yup.string().email().required(),
 password: Yup.string().required(),
 ```
 
-- Se o _email_ ou _senha_ não forem encontrados:
+- Se não encontrar o _email_ ou _senha_ do usuário:
 
   - Responde status HTTP com o código `400` (Bad Request)
   - Retorna o seguinte JSON: `{ error: 'Email ou senha incorreto' }`
 
+- Encontrando com sucesso _email_ e _senha_ do usuário:
+
+  - Responde status HTTP com o código `200` (OK)
+  - Retorna o seguinte JSON: `{id: user.id, email, name:user.name, admin:user.admin }`
+    
 ~
 
 ## Status do projeto
