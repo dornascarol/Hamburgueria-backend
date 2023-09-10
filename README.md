@@ -161,6 +161,7 @@ docker start codeburguer-postgres
 | ------ | -------------- | ------------------------------------------------------------------------------------------------------     |
 | POST   | /users         | Cria um usuário usando as informações enviadas dentro do arquivo `request.body`.                           |
 | POST   | /sessions      | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.      |
+| POST   | /products      | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E visualiza o arquivo.    | 
 
 
 ## Middlewares
