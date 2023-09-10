@@ -177,9 +177,10 @@ routes() {
   }
 ```
 ## Migrations
-Criações de tabelas para o banco de dados. 
+Serve para criações de tabelas para o banco de dados.
 
 Precisa estar, primeiramente, com o Docker rodando. 
+E em seguida, precisa rodar a Migration. 
 
 - Tabela de Usuários:
   - id
@@ -189,7 +190,18 @@ Precisa estar, primeiramente, com o Docker rodando.
   - admin
   - created_at
   - updated_at
- 
+
+ ~
+
+ - Tabela de Produtos:
+   - id
+   - name
+   - price
+   - category
+   - path
+   - created_at
+   - updated_at
+    
 ## Controllers
 Padrão do objeto que espero receber no Insomnia.
 
