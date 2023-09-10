@@ -159,7 +159,7 @@ docker start codeburguer-postgres
 
 | Método | URL            | Descrição                                                                                                  |
 | ------ | -------------- | ------------------------------------------------------------------------------------------------------     |
-| POST   | /users         | Cria um usuário usando as informações enviadas dentro do arquivo `request body`.                           |
+| POST   | /users         | Cria um usuário usando as informações enviadas dentro do arquivo `request.body`.                           |
 | POST   | /sessions      | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.      |
 
 
@@ -248,6 +248,27 @@ password: Yup.string().required(),
   - Responde status HTTP com o código `200` (OK)
   - Retorna o seguinte JSON: `{id: user.id, email, name:user.name, admin:user.admin }`
     
+~
+
+##### Schema do Product para criação de produtos:
+
+```js
+name: Yup.string().required(),
+price: Yup.number().required(),
+category: Yup.string().required(),
+
+```
+
+- Se encontrar algum dado _inválido_:
+
+    - Responde status HTTP com o código `400` (Bad Request)
+    - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+ 
+- Criando com sucesso um _produto_:
+
+  - Responde status HTTP com o código `200` (OK)
+  - Retorna o seguinte JSON: `{ id, name, price, category, path, updated_at, created_at  }`
+ 
 ~
 
 ## Status do projeto
