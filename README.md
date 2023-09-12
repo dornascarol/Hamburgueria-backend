@@ -22,6 +22,7 @@ Além de um painel administrativo onde o representante do estabelecimento conseg
 * UUID (v4)
 * Yup
 * Bcrypt
+* Multer
 * 
 
 ## Ferramentas
@@ -76,6 +77,12 @@ Biblioteca <a href="https://github.com/jquense/yup" target="_blank"> Yup </a> na
 Biblioteca <a href="https://yarnpkg.com/package?name=bcrypt" target="_blank"> Bcrypt </a> na versão 5.1.0 
 
 :small_orange_diamond: `yarn add bcrypt`
+
+~
+
+Biblioteca <a href="https://github.com/expressjs/multer" target="_blank" > Multer </a> na versão 1.4.5-1ts.1
+
+:small_orange_diamond: `yarn add multer`
 
 ~
 
