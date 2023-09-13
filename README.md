@@ -164,11 +164,11 @@ docker start codeburguer-postgres
 ## Endpoints
 <p> Caminho da URL: http://localhost:3000 </p>
 
-| Método | URL            | Descrição                                                                                                  |
-| ------ | -------------- | ------------------------------------------------------------------------------------------------------     |
-| POST   | /users         | Cria um usuário usando as informações enviadas dentro do arquivo `request.body`.                           |
-| POST   | /sessions      | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.      |
-| POST   | /products      | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E visualiza o arquivo.    | 
+| Método | URL            | Descrição                                                                                                                                    |
+| ------ | -------------- | ------------------------------------------------------------------------------------------------------                                       |
+| POST   | /users         | Cria um usuário usando as informações enviadas dentro do arquivo `request.body`.                                                             |
+| POST   | /sessions      | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.                                        |
+| POST   | /products      | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E fazer o upload do arquivo que espero receber do Insomnia. | 
 
 
 ## Middlewares
@@ -178,7 +178,8 @@ middlewares() {
     this.app.use('/product-file', express.static(resolve(__dirname, '..', 'uploads')))
   }
 ```
-e
+~
+
 ```js
 routes() {
     this.app.use(routes)
@@ -296,10 +297,30 @@ super.init({
         {
             sequelize,
         })
-
 ```
 
 ~
+
+##### Método static init no Product
+
+```js
+super.init(
+            {
+            name: Sequelize.STRING,
+            price: Sequelize.INTEGER,
+            category: Sequelize.STRING,
+            path: Sequelize.STRING,
+            url: {
+                type: Sequelize.VIRTUAL,
+                get() {
+                    return `http://localhost:3000/product-file/${this.path}`
+                },
+            },
+        },
+        {
+            sequelize,
+        })
+```
 
 ## Status do projeto
 :construction: O projeto está em andamento. 
