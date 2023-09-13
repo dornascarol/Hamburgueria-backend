@@ -86,7 +86,7 @@ Biblioteca <a href="https://github.com/expressjs/multer" target="_blank" > Multe
 
 ~
 
-## Dependência de desenvolvimento
+## Dependências de desenvolvimento
 O <a href="https://classic.yarnpkg.com/en/package/nodemon" target="_blank" > Nodemon </a> na versão 3.0.1
 
 :small_orange_diamond: `yarn add nodemon -D`
@@ -277,6 +277,28 @@ category: Yup.string().required(),
   - Responde status HTTP com o código `200` (OK)
   - Retorna o seguinte JSON: `{ id, name, price, category, path, updated_at, created_at  }`
  
+~
+
+## Models
+
+Responsável pela leitura e escrita de dados. Auxiliar na interface da aplicação com o banco de dados.
+
+##### Método static init no User
+
+```js
+super.init({
+            name: Sequelize.STRING,
+            email: Sequelize.STRING,
+            password: Sequelize.VIRTUAL,
+            password_hash: Sequelize.STRING,
+            admin: Sequelize.BOOLEAN,
+        },
+        {
+            sequelize,
+        })
+
+```
+
 ~
 
 ## Status do projeto
