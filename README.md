@@ -23,6 +23,7 @@ Além de um painel administrativo onde o representante do estabelecimento conseg
 * Yup
 * Bcrypt
 * Multer
+* JWT (JSON Web Token)
 * 
 
 ## Ferramentas
@@ -83,6 +84,10 @@ Biblioteca <a href="https://yarnpkg.com/package?name=bcrypt" target="_blank"> Bc
 Biblioteca <a href="https://github.com/expressjs/multer" target="_blank" > Multer </a> na versão 1.4.5-1ts.1
 
 :small_orange_diamond: `yarn add multer`
+
+~
+
+Biblioteca <a href="https://yarnpkg.com/package?name=jsonwebtoken" target="_blank"> JWT </a> na versão 9.0.2
 
 ~
 
@@ -256,7 +261,7 @@ password: Yup.string().required(),
 - Encontrando com sucesso _email_ e _senha_ do usuário:
 
   - Responde status HTTP com o código `200` (OK)
-  - Retorna o seguinte JSON: `{id: user.id, email, name:user.name, admin:user.admin }`
+  - Retorna o seguinte JSON: `{id: user.id, email, name:user.name, admin:user.admin, token:jwt.sign }`
     
 ~
 
