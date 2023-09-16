@@ -89,6 +89,8 @@ Biblioteca <a href="https://github.com/expressjs/multer" target="_blank" > Multe
 
 Biblioteca <a href="https://yarnpkg.com/package?name=jsonwebtoken" target="_blank"> JWT </a> na versão 9.0.2
 
+:small_orange_diamond: `yarn add jsonwebtoken`
+
 ~
 
 ## Dependências de desenvolvimento
@@ -164,6 +166,11 @@ yarn sequelize db:migrate:undo:all
 docker start codeburguer-postgres
 ```
 
+- Para derrubar o banco de dados:
+```
+docker stop codeburguer-postgres
+```
+
 - Utilizei o Insomnia para realizar as requisições desejadas.
 
 ## Endpoints
@@ -174,7 +181,7 @@ docker start codeburguer-postgres
 | POST   | /users         | Cria um usuário usando as informações enviadas dentro do arquivo `request.body`.                                                             |
 | POST   | /sessions      | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.                                        |
 | POST   | /products      | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E fazer o upload do arquivo que espero receber do Insomnia. |
-| GET    | /products      | Procuro todos os produtos no banco de dados da tabela `products`. E retorna um JSON da lista com todos os dados dos produtos.                |
+| GET    | /products      | Procura todos os produtos no banco de dados da tabela `products`. E retorna um JSON da lista com todos os dados dos produtos.                |
 
 
 ## Middlewares
