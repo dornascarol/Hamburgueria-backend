@@ -185,6 +185,10 @@ docker stop codeburguer-postgres
 
 
 ## Middlewares
+Serve como interceptador. 
+
+Assim que o usuário tentar acessar a rota, faz uma validação da informação se está correta ou se está incorreta.
+
 ```js
 middlewares() {
     this.app.use(express.json())
@@ -198,6 +202,31 @@ routes() {
     this.app.use(routes)
   }
 ```
+~
+
+##### Usando JWT:
+
+```js
+export default(request, response, next) => {
+    const authToken = request.headers.authorization
+```
+
+- Se o usuário não mandar um _token_:
+
+  - Responde status HTTP com o código `401` (Unauthorized)
+  - Retorna o seguinte JSON: `{ error: 'Token não fornecido' }`
+
+- Se o usuário mandar um _token_ errado:
+
+  - Responde status HTTP com o código `401` (Unauthorized)
+  - Retorna o seguinte JSON: `{ error: 'Token inválido' }`
+
+- Se o usuário mandar um _token_ válido:
+
+  - Retorna o JSON com todas as informações dos produtos da tabela do banco de dados. Acesso autorizado para a rota.
+ 
+~
+
 ## Migrations
 Serve para criações de tabelas para o banco de dados.
 
