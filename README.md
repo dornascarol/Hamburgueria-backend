@@ -252,6 +252,14 @@ E em seguida, precisa rodar a Migration.
    - path
    - created_at
    - updated_at
+
+~
+
+- Tabela de Categorias:
+   - id
+   - name
+   - created_at
+   - updated_at
     
 ## Controllers
 Padrão do objeto que espero receber no Insomnia.
