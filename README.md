@@ -182,6 +182,8 @@ docker stop codeburguer-postgres
 | POST   | /sessions      | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.                                        |
 | POST   | /products      | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E fazer o upload do arquivo que espero receber do Insomnia. |
 | GET    | /products      | Procura todos os produtos no banco de dados da tabela `products`. E retorna um JSON da lista com todos os dados dos produtos.                |
+| POST   | /categories    | Cria uma categoria usando a informação enviada dentro do arquivo `request.body` com token.                                                   |
+| GET    | /categories    | Procura todas as categorias no banco de dados da tabela `categories`. E retorna um JSON da lista com todos os dados das categorias.          |
 
 
 ## Middlewares
