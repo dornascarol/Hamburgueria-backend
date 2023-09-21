@@ -264,7 +264,7 @@ E em seguida, precisa rodar a Migration.
 ## Controllers
 Padrão do objeto que espero receber no Insomnia.
 
-##### Schema do User para criação do usuário:
+##### Schema do User para criação do usuários:
 
 ```js
 name: Yup.string().required(),
@@ -327,6 +327,25 @@ category: Yup.string().required(),
 
   - Responde status HTTP com o código `200` (OK)
   - Retorna o seguinte JSON: `{ id, name, price, category, path, updated_at, created_at  }`
+ 
+~
+
+##### Schema do Category para criação de categorias:
+
+```js
+name: Yup.string().required(),
+
+```
+
+- Se encontrar algum dado _inválido_:
+
+    - Responde status HTTP com o código `400` (Bad Request)
+    - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+ 
+- Criando com sucesso uma _categoria_:
+
+  - Responde status HTTP com o código `200` (OK)
+  - Retorna o seguinte JSON: `{ id, name, updated_at, created_at  }`
  
 ~
 
