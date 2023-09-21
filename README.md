@@ -372,5 +372,22 @@ super.init(
         })
 ```
 
+~
+
+##### Método static init no Category
+
+```js
+super.init(
+            {
+            name: Sequelize.STRING,
+        },
+        {
+            sequelize,
+        })
+```
+
+~
+
+
 ## Status do projeto
 :construction: O projeto está em andamento. 
