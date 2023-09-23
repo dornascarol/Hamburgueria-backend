@@ -343,11 +343,16 @@ name: Yup.string().required(),
 
     - Responde status HTTP com o código `400` (Bad Request)
     - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+      
+- Se encontrar alguma _categoria_ repetida:
+
+    - Responde status HTTP com o código `400` (Bad Request)
+    - Retorna o erro no formato JSON: `{ error: 'Categoria já existe' }`
  
 - Criando com sucesso uma _categoria_:
 
   - Responde status HTTP com o código `200` (OK)
-  - Retorna o seguinte JSON: `{ id, name, updated_at, created_at  }`
+  - Retorna o seguinte JSON: `{ name, id }`
  
 ~
 
