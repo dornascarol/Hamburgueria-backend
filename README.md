@@ -269,6 +269,11 @@ E em seguida, precisa rodar a Migration.
   - Remover coluna _category_ que está na Tabela de Produtos
 
 ~  
+
+- Criar campo na tabela:
+  - Adicionar coluna _category_id_ na Tabela de Produtos
+ 
+~
   
 ## Controllers
 Padrão do objeto que espero receber no Insomnia.
