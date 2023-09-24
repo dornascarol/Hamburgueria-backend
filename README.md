@@ -230,12 +230,12 @@ export default(request, response, next) => {
 ~
 
 ## Migrations
-Serve para criações de tabelas para o banco de dados.
+Serve para criações de tabelas para o banco de dados. E para modificá-las.
 
 Precisa estar, primeiramente, com o Docker rodando. 
 E em seguida, precisa rodar a Migration. 
 
-- Tabela de Usuários:
+- Criação da Tabela de Usuários:
   - id
   - name
   - email
@@ -246,7 +246,7 @@ E em seguida, precisa rodar a Migration.
 
  ~
 
- - Tabela de Produtos:
+ - Criação da Tabela de Produtos:
    - id
    - name
    - price
@@ -257,12 +257,19 @@ E em seguida, precisa rodar a Migration.
 
 ~
 
-- Tabela de Categorias:
+- Criação da Tabela de Categorias:
    - id
    - name
    - created_at
    - updated_at
-    
+
+~
+
+- Deletar campo na tabela:
+  - Remover coluna _category_ que está na Tabela de Produtos
+
+~  
+  
 ## Controllers
 Padrão do objeto que espero receber no Insomnia.
 
