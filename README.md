@@ -396,7 +396,6 @@ super.init(
             {
             name: Sequelize.STRING,
             price: Sequelize.INTEGER,
-            category: Sequelize.STRING,
             path: Sequelize.STRING,
             url: {
                 type: Sequelize.VIRTUAL,
@@ -426,6 +425,18 @@ super.init(
 
 ~
 
+##### Método static associate no Product
+
+```js
+static associate(models){
+        this.belongsTo(models.Category, { 
+            foreignKey: 'category_id', 
+            as: 'category',
+        })
+    }
+```
+
+~
 
 ## Status do projeto
 :construction: O projeto está em andamento. 
