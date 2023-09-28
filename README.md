@@ -319,7 +319,7 @@ password: Yup.string().required(),
 - Encontrando com sucesso _email_ e _senha_ do usuário:
 
   - Responde status HTTP com o código `200` (OK)
-  - Retorna o seguinte JSON: `{id: user.id, email, name:user.name, admin:user.admin, token:jwt.sign }`
+  - Retorna o seguinte JSON: `{id: user.id, email, name: user.name, admin: user.admin, token: jwt.sign }`
     
 ~
 
@@ -328,7 +328,7 @@ password: Yup.string().required(),
 ```js
 name: Yup.string().required(),
 price: Yup.number().required(),
-category: Yup.string().required(),
+category_id: Yup.number().required(),
 
 ```
 
@@ -340,8 +340,13 @@ category: Yup.string().required(),
 - Criando com sucesso um _produto_:
 
   - Responde status HTTP com o código `200` (OK)
-  - Retorna o seguinte JSON: `{ id, name, price, category, path, updated_at, created_at  }`
- 
+  - Retorna o seguinte JSON: `{ id, name, price, category_id, path, updated_at, created_at }`
+    
+- Encontrando todos os _produtos_ cadastrados:
+  
+    - Responde status HTTP com o código `200` (OK)
+    - Retorna o seguinte JSON: `{ url, id, name, price, path, updated_at, created_at, category_id: category: { id, name } }`
+       
 ~
 
 ##### Schema do Category para criação de categorias:
