@@ -24,6 +24,7 @@ Além de um painel administrativo onde o representante do estabelecimento conseg
 * Bcrypt
 * Multer
 * JWT (JSON Web Token)
+* MongoDB
 * 
 
 ## Ferramentas
@@ -53,6 +54,10 @@ O <a href="https://sequelize.org/docs/v6/getting-started/" target="_blank"> Sequ
 ~
 
 Foi usado o programa <a href="https://insomnia.rest/download" target="_blank" > Insomnia </a> para testar as requisições das rotas simulando o Front-end.
+
+~
+
+O <a href="https://yarnpkg.com/package?name=mongoose" target="_blank"> MongoDB </a> 
 
 ~
 
