@@ -5,7 +5,7 @@
 <p> Usuário pode se cadastrar na aplicação, escolher os pedidos e verificar o carrinho de compras. </p>
 
 <h2> Introdução </h2>
-Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado, ele escolhe uma variedade de hambúrgueres e complementos. Por fim, o usuário pode clicar no carrinho e realizar a compra. 
+Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado e com o token autenticado, o home da loja fica visível para escolher variedade de hambúrgueres e complementos. Por fim, pode clicar no carrinho e realizar a compra. 
 
 Além de um painel administrativo onde o representante do estabelecimento consegue ver todos os pedidos e seus status. 
 
