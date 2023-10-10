@@ -5,7 +5,7 @@
 <p> Usuário pode se cadastrar na aplicação, escolher os pedidos e verificar o carrinho de compras. </p>
 
 <h2> Introdução </h2>
-Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado e com o token autenticado, o home da loja fica visível para escolher variedade de hambúrgueres e complementos. Por fim, pode clicar no carrinho e realizar a compra. 
+Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado e com o token autenticado, a página inicial com os produtos da loja fica visível para escolher variedades de hambúrgueres e complementos. Por fim, pode clicar no carrinho e realizar a compra. 
 
 Além de um painel administrativo onde o representante do estabelecimento consegue ver todos os pedidos e seus status. 
 
@@ -24,7 +24,7 @@ Além de um painel administrativo onde o representante do estabelecimento conseg
 * Bcrypt
 * Multer
 * JWT (JSON Web Token)
-* MongoDB
+* Mongoose
 * 
 
 ## Ferramentas
@@ -54,10 +54,6 @@ O <a href="https://sequelize.org/docs/v6/getting-started/" target="_blank"> Sequ
 ~
 
 Foi usado o programa <a href="https://insomnia.rest/download" target="_blank" > Insomnia </a> para testar as requisições das rotas simulando o Front-end.
-
-~
-
-O <a href="https://yarnpkg.com/package?name=mongoose" target="_blank"> MongoDB </a> 
 
 ~
 
@@ -95,6 +91,12 @@ Biblioteca <a href="https://github.com/expressjs/multer" target="_blank" > Multe
 Biblioteca <a href="https://yarnpkg.com/package?name=jsonwebtoken" target="_blank"> JWT </a> na versão 9.0.2
 
 :small_orange_diamond: `yarn add jsonwebtoken`
+
+~
+
+Biblioteca <a href="https://yarnpkg.com/package?name=mongoose" target="_blank"> Mongoose </a> na versão 7.6.1
+
+:small_orange_diamond: `yarn add mongoose`
 
 ~
 
@@ -145,6 +147,7 @@ yarn dev
 ```
 
 - Parar de rodar o servidor: no terminal clicar nas teclas de "Ctrl" e "C".
+  
 
 - Para debugar:
 ```
@@ -166,17 +169,28 @@ yarn sequelize db:migrate
 yarn sequelize db:migrate:undo:all
 ```
 
-- Para rodar o banco de dados:
+- Para rodar o banco de dados relacional PostgreSQL:
 ```
 docker start codeburguer-postgres
 ```
 
-- Para derrubar o banco de dados:
+- Para derrubar este banco de dados relacional:
 ```
 docker stop codeburguer-postgres
 ```
 
 - Utilizei o Insomnia para realizar as requisições desejadas.
+  
+
+- Para rodar o banco de dados não relacional MongoDB:
+```
+docker start mongo
+```
+
+- Para derrubar este banco de dados não relacional:
+```
+docker stop mongo
+```
 
 ## Endpoints
 <p> Caminho da URL: http://localhost:3000 </p>
