@@ -203,6 +203,7 @@ docker stop mongo
 | GET    | /products      | Procura todos os produtos no banco de dados da tabela `products`. E retorna um JSON da lista com todos os dados dos produtos.                |
 | POST   | /categories    | Cria uma categoria usando a informação enviada dentro do arquivo `request.body` com token.                                                   |
 | GET    | /categories    | Procura todas as categorias no banco de dados da tabela `categories`. E retorna um JSON da lista com todos os dados das categorias.          |
+| POST   | /orders        | Cria um pedido usando as informações enviadas dentro do arquivo `request.body` com token atualizado.                                         |
 
 
 ## Middlewares
