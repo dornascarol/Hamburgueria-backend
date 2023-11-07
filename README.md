@@ -392,6 +392,29 @@ name: Yup.string().required(),
  
 ~
 
+##### Schema do Order para criação de pedidos:
+
+```js
+products: Yup.array().required().of(
+                Yup.object().shape({
+                    id: Yup.number().required(),
+                    quantity: Yup.number().required(),
+                })
+            )
+```
+
+- Se encontrar algum dado _inválido_:
+
+    - Responde status HTTP com o código `400` (Bad Request)
+    - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+ 
+- Criando com sucesso um _pedido_:
+
+  - Responde status HTTP com o código `201` (Created)
+  - Retorna o seguinte JSON: `{ id: product.id, name: product.name, price: product.price, category: product.category.name, url: product.url, quantity: request.body.products[productIndex].quantity }`
+
+~
+
 ## Models
 
 Responsável pela leitura e escrita de dados. Auxiliar na interface da aplicação com o banco de dados.
