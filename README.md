@@ -25,6 +25,7 @@ Além de um painel administrativo onde o representante do estabelecimento conseg
 * Multer
 * JWT (JSON Web Token)
 * Mongoose
+* MongoDB Compass
 * 
 
 ## Ferramentas
@@ -54,6 +55,10 @@ O <a href="https://sequelize.org/docs/v6/getting-started/" target="_blank"> Sequ
 ~
 
 Foi usado o programa <a href="https://insomnia.rest/download" target="_blank" > Insomnia </a> para testar as requisições das rotas simulando o Front-end.
+
+~
+
+O <a href="https://www.mongodb.com/try/download/compass" target="_blank" > MongoDB Compass </a> (GUI) na configuração do computador versão 1.40.4 (Estável).
 
 ~
 
