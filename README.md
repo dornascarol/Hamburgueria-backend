@@ -397,7 +397,11 @@ name: Yup.string().required(),
 
   - Responde status HTTP com o código `200` (OK)
   - Retorna o seguinte JSON: `{ name, id }`
- 
+
+- Se encontrar um usuário que não seja _admin_:
+
+  - Responde status HTTP com o código `401` (Unauthorized)
+       
 ~
 
 ##### Schema do Order para criação de pedidos:
