@@ -179,7 +179,7 @@ yarn sequelize db:migrate:undo:all
 docker start codeburguer-postgres
 ```
 
-- Para derrubar este banco de dados relacional:
+- Para derrubar o banco de dados relacional PostgreSQL:
 ```
 docker stop codeburguer-postgres
 ```
@@ -192,7 +192,7 @@ docker stop codeburguer-postgres
 docker start mongo
 ```
 
-- Para derrubar este banco de dados não relacional:
+- Para derrubar o banco de dados não relacional MongoDB:
 ```
 docker stop mongo
 ```
@@ -425,6 +425,10 @@ products: Yup.array().required().of(
   - Responde status HTTP com o código `201` (Created)
   - Retorna o seguinte JSON: `{ id: product.id, name: product.name, price: product.price, category: product.category.name, url: product.url, quantity: request.body.products[productIndex].quantity }`
 
+- Se encontrar um usuário que não seja _admin_:
+
+  - Responde status HTTP com o código `401` (Unauthorized)
+    
 ~
 
 ## Models
