@@ -373,7 +373,11 @@ category_id: Yup.number().required(),
   
     - Responde status HTTP com o código `200` (OK)
     - Retorna o seguinte JSON: `{ url, id, name, price, path, updated_at, created_at, category_id: category: { id, name } }`
-       
+
+- Se encontrar um usuário que não seja _admin_:
+
+  - Responde status HTTP com o código `401` (Unauthorized)
+           
 ~
 
 ##### Schema do Category para criação de categorias:
