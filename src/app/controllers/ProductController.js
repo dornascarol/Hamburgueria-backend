@@ -10,6 +10,7 @@ class ProductController {
                 name: Yup.string().required(),
                 price: Yup.number().required(),
                 category_id: Yup.number().required(),
+                offer: Yup.boolean(),
             })
 
             try {
@@ -25,13 +26,14 @@ class ProductController {
             }
 
             const { filename: path } = request.file
-            const { name, price, category_id } = request.body
+            const { name, price, category_id, offer } = request.body
 
             const product = await Product.create({
                 name,
                 price,
                 category_id,
                 path,
+                offer
             });
             
             return response.json(product);
