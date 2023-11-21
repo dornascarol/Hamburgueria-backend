@@ -34,4 +34,6 @@ routes.get('/orders', OrderController.index)
 
 routes.put('/orders/:id', OrderController.update)
 
+routes.put('/products/:id', upload.single('file'), ProductController.update)
+
 export default routes
