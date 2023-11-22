@@ -361,6 +361,7 @@ password: Yup.string().required(),
 name: Yup.string().required(),
 price: Yup.number().required(),
 category_id: Yup.number().required(),
+offer: Yup.boolean(),
 
 ```
 
@@ -372,12 +373,12 @@ category_id: Yup.number().required(),
 - Criando com sucesso um _produto_:
 
   - Responde status HTTP com o código `200` (OK)
-  - Retorna o seguinte JSON: `{ id, name, price, category_id, path, updated_at, created_at }`
+  - Retorna o seguinte JSON: `{ id, name, price, category_id, path, updated_at, created_at, offer }`
     
 - Encontrando todos os _produtos_ cadastrados:
   
     - Responde status HTTP com o código `200` (OK)
-    - Retorna o seguinte JSON: `{ url, id, name, price, path, updated_at, created_at, category_id: category: { id, name } }`
+    - Retorna o seguinte JSON: `{ url, id, name, price, path, updated_at, created_at, category_id: category: { id, name }, offer }`
 
 - Se encontrar um usuário que não seja _admin_:
 
@@ -469,6 +470,7 @@ super.init(
             name: Sequelize.STRING,
             price: Sequelize.INTEGER,
             path: Sequelize.STRING,
+            offer: Sequelize.BOOLEAN,
             url: {
                 type: Sequelize.VIRTUAL,
                 get() {
