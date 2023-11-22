@@ -301,7 +301,12 @@ E em seguida, precisa rodar a Migration.
   - Adicionar coluna _category_id_ na Tabela de Produtos
  
 ~
-  
+
+- Acrescentar campo na tabela:
+  - Adicionar coluna _offer_ na Tabela de Produtos
+
+~
+
 ## Controllers
 Padrão do objeto que espero receber no Insomnia.
 
