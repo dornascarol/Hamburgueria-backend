@@ -200,17 +200,18 @@ docker stop mongo
 ## Endpoints
 <p> Caminho da URL: http://localhost:3000 </p>
 
-| Método | URL            | Descrição                                                                                                                                               |
-| ------ | -------------- | ------------------------------------------------------------------------------------------------------                                                  |
-| POST   | /users         | Cria um usuário usando as informações enviadas dentro do arquivo `request.body`.                                                                        |
-| POST   | /sessions      | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.                                                   |
-| POST   | /products      | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E fazer o upload do arquivo que espero receber do Insomnia.            |
-| GET    | /products      | Procura todos os produtos no banco de dados da tabela `products`. E retorna um JSON da lista com todos os dados dos produtos.                           |
-| POST   | /categories    | Cria uma categoria usando a informação enviada dentro do arquivo `request.body` com token.                                                              |
-| GET    | /categories    | Procura todas as categorias no banco de dados da tabela `categories`. E retorna um JSON da lista com todos os dados das categorias.                     |
-| POST   | /orders        | Cria um pedido usando as informações enviadas dentro do arquivo `request.body` com token atualizado.                                                    |
-| GET    | /orders        | Procura todos os pedidos no banco de dados. Sem o body e com token atualizado. E retorna um JSON da lista com informações de `user, products e status`. |
-| PUT    | /orders        | Atualiza o status do pedido específico, a partir do id, usando o arquivo `request.body`. E responde com uma mensagem de sucesso.                        |
+| Método | URL            | Descrição                                                                                                                                                                                      |
+| ------ | -------------- | ------------------------------------------------------------------------------------------------------                                                                                         |
+| POST   | /users         | Cria um usuário usando as informações enviadas dentro do arquivo `request.body`.                                                                                                               |
+| POST   | /sessions      | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.                                                                                          |
+| POST   | /products      | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E fazer o upload do arquivo que espero receber do Insomnia.                                                   |
+| GET    | /products      | Procura todos os produtos no banco de dados da tabela `products`. E retorna um JSON da lista com todos os dados dos produtos.                                                                  |
+| POST   | /categories    | Cria uma categoria usando a informação enviada dentro do arquivo `request.body` com token.                                                                                                     |
+| GET    | /categories    | Procura todas as categorias no banco de dados da tabela `categories`. E retorna um JSON da lista com todos os dados das categorias.                                                            |
+| POST   | /orders        | Cria um pedido usando as informações enviadas dentro do arquivo `request.body` com token atualizado.                                                                                           |
+| GET    | /orders        | Procura todos os pedidos no banco de dados. Sem o body e com token atualizado. E retorna um JSON da lista com informações de `user, products e status`.                                        |
+| PUT    | /orders/:id    | Atualiza o status do pedido específico, a partir do id, usando o arquivo `request.body`. E responde com uma mensagem de sucesso.                                                               |
+| PUT    | /products/:id  | Atualiza algum dado do pedido específico, a partir do id, usando o arquivo `request.body`. Faz o upload do arquivo recebido do Insomnia (quando tiver). E responde com uma mensagem de sucesso.|
 
 
 ## Middlewares
@@ -473,7 +474,9 @@ offer: Yup.boolean(),
   
     - Responde status HTTP com o código `401` (Unauthorized)
     - Retorna o seguinte JSON: `{ error: 'Verifique se o ID do seu produto está correto' }`
+      
 ~
+
 
 ## Models
 
