@@ -441,6 +441,40 @@ products: Yup.array().required().of(
     
 ~
 
+##### Schema do Product para atualizações de produtos:
+
+```js
+name: Yup.string(),
+price: Yup.number(),
+category_id: Yup.number(),
+offer: Yup.boolean(),
+
+```
+
+- Se encontrar algum dado _inválido_:
+
+    - Responde status HTTP com o código `400` (Bad Request)
+    - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+ 
+- Alterando com sucesso um _produto_:
+
+  - Responde status HTTP com o código `200` (OK)
+    
+- Encontrando todos os _produtos_ cadastrados:
+  
+    - Responde status HTTP com o código `200` (OK)
+    - Retorna o seguinte JSON: `{ url, id, name, price, path, updated_at, created_at, category_id: category: { id, name }, offer }`
+
+- Se encontrar um usuário que não seja _admin_:
+
+  - Responde status HTTP com o código `401` (Unauthorized)
+
+- Se não encontrar algum _produto_ pelo ID:
+  
+    - Responde status HTTP com o código `401` (Unauthorized)
+    - Retorna o seguinte JSON: `{ error: 'Verifique se o ID do seu produto está correto' }`
+~
+
 ## Models
 
 Responsável pela leitura e escrita de dados. Auxiliar na interface da aplicação com o banco de dados.
