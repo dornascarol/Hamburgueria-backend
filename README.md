@@ -288,6 +288,7 @@ E em seguida, precisa rodar a Migration.
 - Criação da Tabela de Categorias:
    - id
    - name
+   - path
    - created_at
    - updated_at
 
@@ -305,6 +306,11 @@ E em seguida, precisa rodar a Migration.
 
 - Acrescentar campo na tabela:
   - Adicionar coluna _offer_ na Tabela de Produtos
+
+~
+
+- Acrescentar campo na tabela:
+  - Adicionar coluna _path_ na Tabela de Categorias
 
 ~
 
