@@ -204,9 +204,9 @@ docker stop mongo
 | ------ | -------------- | ------------------------------------------------------------------------------------------------------                                                                                         |
 | POST   | /users         | Cria um usuário usando as informações enviadas dentro do arquivo `request.body`.                                                                                                               |
 | POST   | /sessions      | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.                                                                                          |
-| POST   | /products      | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E fazer o upload do arquivo que espero receber do Insomnia.                                                   |
+| POST   | /products      | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E faz o upload do arquivo recebido do Insomnia.                                                               |
 | GET    | /products      | Procura todos os produtos no banco de dados da tabela `products`. E retorna um JSON da lista com todos os dados dos produtos.                                                                  |
-| POST   | /categories    | Cria uma categoria usando a informação enviada dentro do arquivo `request.body` com token.                                                                                                     |
+| POST   | /categories    | Cria uma categoria usando a informação enviada dentro do arquivo `request.body` com token. E faz o upload do arquivo recebido do Insomnia.                                                     |
 | GET    | /categories    | Procura todas as categorias no banco de dados da tabela `categories`. E retorna um JSON da lista com todos os dados das categorias.                                                            |
 | POST   | /orders        | Cria um pedido usando as informações enviadas dentro do arquivo `request.body` com token atualizado.                                                                                           |
 | GET    | /orders        | Procura todos os pedidos no banco de dados. Sem o body e com token atualizado. E retorna um JSON da lista com informações de `user, products e status`.                                        |
@@ -223,6 +223,8 @@ Assim que o usuário tentar acessar a rota, faz uma validação da informação 
 middlewares() {
     this.app.use(express.json())
     this.app.use('/product-file', express.static(resolve(__dirname, '..', 'uploads')))
+
+    this.app.use('/category-file', express.static(resolve(__dirname, '..', 'uploads')))
   }
 ```
 ~
