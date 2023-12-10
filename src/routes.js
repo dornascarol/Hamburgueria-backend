@@ -36,4 +36,6 @@ routes.put('/orders/:id', OrderController.update)
 
 routes.put('/products/:id', upload.single('file'), ProductController.update)
 
+routes.put('/categories/:id', upload.single('file'), CategoryController.update)
+
 export default routes

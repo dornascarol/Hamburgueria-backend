@@ -82,7 +82,7 @@ class CategoryController {
             path = request.file.filename
         }
 
-        await Category.update({ name, path })
+        await Category.update({ name, path }, { where: { id } })
 
         return response.status(200).json();
         } catch (err) {
