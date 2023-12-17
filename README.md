@@ -468,11 +468,6 @@ offer: Yup.boolean(),
 - Alterando com sucesso um _produto_:
 
   - Responde status HTTP com o código `200` (OK)
-    
-- Encontrando todos os _produtos_ cadastrados:
-  
-    - Responde status HTTP com o código `200` (OK)
-    - Retorna o seguinte JSON: `{ url, id, name, price, path, updated_at, created_at, category_id: category: { id, name }, offer }`
 
 - Se encontrar um usuário que não seja _admin_:
 
@@ -483,6 +478,33 @@ offer: Yup.boolean(),
     - Responde status HTTP com o código `401` (Unauthorized)
     - Retorna o seguinte JSON: `{ error: 'Verifique se o ID do seu produto está correto' }`
       
+~
+
+##### Schema do Category para atualizações de categorias:
+
+```js
+name: Yup.string(),
+
+```
+
+- Se encontrar algum dado _inválido_:
+
+    - Responde status HTTP com o código `400` (Bad Request)
+    - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+      
+- Se não encontrar alguma _categoria_ pelo ID:
+
+    - Responde status HTTP com o código `401` (Unauthorized)
+    - Retorna o erro no formato JSON: `{ error: 'Verifique se o ID da sua categoria está correto' }`
+ 
+- Alterando com sucesso uma _categoria_:
+
+  - Responde status HTTP com o código `200` (OK)
+
+- Se encontrar um usuário que não seja _admin_:
+
+  - Responde status HTTP com o código `401` (Unauthorized)
+       
 ~
 
 
