@@ -5,9 +5,9 @@
 <p> Usuário pode se cadastrar na aplicação, escolher os pedidos e verificar o carrinho de compras. </p>
 
 <h2> Introdução </h2>
-Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado e com o token autenticado, a página inicial com os produtos da loja fica visível para escolher variedades de hambúrgueres e complementos. Por fim, pode clicar no carrinho e realizar a compra. 
+Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado e com o token autenticado, a página inicial com os produtos da loja fica visível para escolher variedades de hambúrgueres e complementos. Por fim, pode clicar no carrinho. 
 
-Além de um painel administrativo onde o representante do estabelecimento consegue ver todos os pedidos e seus status. 
+Além de um painel administrativo onde o representante do estabelecimento consegue ver todos os pedidos e seus status atualizados. 
 
 ## Tecnologias utilizadas
 * VS Code
@@ -26,7 +26,8 @@ Além de um painel administrativo onde o representante do estabelecimento conseg
 * JWT (JSON Web Token)
 * Mongoose
 * MongoDB Compass
-* 
+  
+  
 
 ## Ferramentas
 Na aplicação foi utilizado o <a href="https://nodejs.org/en/download" target="_blank" > Node.JS </a>  na versão 18.14.0 em LTS.
@@ -196,22 +197,24 @@ docker start mongo
 ```
 docker stop mongo
 ```
+~
 
 ## Endpoints
 <p> Caminho da URL: http://localhost:3000 </p>
 
-| Método | URL            | Descrição                                                                                                                                                                                      |
-| ------ | -------------- | ------------------------------------------------------------------------------------------------------                                                                                         |
-| POST   | /users         | Cria um usuário usando as informações enviadas dentro do arquivo `request.body`.                                                                                                               |
-| POST   | /sessions      | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.                                                                                          |
-| POST   | /products      | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E faz o upload do arquivo recebido do Insomnia.                                                               |
-| GET    | /products      | Procura todos os produtos no banco de dados da tabela `products`. E retorna um JSON da lista com todos os dados dos produtos.                                                                  |
-| POST   | /categories    | Cria uma categoria usando a informação enviada dentro do arquivo `request.body` com token. E faz o upload do arquivo recebido do Insomnia.                                                     |
-| GET    | /categories    | Procura todas as categorias no banco de dados da tabela `categories`. E retorna um JSON da lista com todos os dados das categorias.                                                            |
-| POST   | /orders        | Cria um pedido usando as informações enviadas dentro do arquivo `request.body` com token atualizado.                                                                                           |
-| GET    | /orders        | Procura todos os pedidos no banco de dados. Sem o body e com token atualizado. E retorna um JSON da lista com informações de `user, products e status`.                                        |
-| PUT    | /orders/:id    | Atualiza o status do pedido específico, a partir do id, usando o arquivo `request.body`. E responde com uma mensagem de sucesso.                                                               |
-| PUT    | /products/:id  | Atualiza algum dado do pedido específico, a partir do id, usando o arquivo `request.body`. Faz o upload do arquivo recebido do Insomnia (quando tiver). E responde com uma mensagem de sucesso.|
+| Método | URL             | Descrição                                                                                                                                                                                         |
+| ------ | --------------  | ------------------------------------------------------------------------------------------------------                                                                                            |
+| POST   | /users          | Cria um usuário usando as informações enviadas dentro do arquivo `request.body`.                                                                                                                  |
+| POST   | /sessions       | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.                                                                                             |
+| POST   | /products       | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E faz o upload do arquivo recebido do Insomnia.                                                                  |
+| GET    | /products       | Procura todos os produtos no banco de dados da tabela `products`. E retorna um JSON da lista com todos os dados dos produtos.                                                                     |
+| POST   | /categories     | Cria uma categoria usando a informação enviada dentro do arquivo `request.body` com token. E faz o upload do arquivo recebido do Insomnia.                                                        |
+| GET    | /categories     | Procura todas as categorias no banco de dados da tabela `categories`. E retorna um JSON da lista com todos os dados das categorias.                                                               |
+| POST   | /orders         | Cria um pedido usando as informações enviadas dentro do arquivo `request.body` com token atualizado.                                                                                              |
+| GET    | /orders         | Procura todos os pedidos no banco de dados. Sem o body e com token atualizado. E retorna um JSON da lista com informações de `user, products e status`.                                           |
+| PUT    | /orders/:id     | Atualiza o status específico do pedido, a partir do id, usando o arquivo `request.body`. E responde com uma mensagem de sucesso.                                                                  |
+| PUT    | /products/:id   | Atualiza algum dado específico do pedido, a partir do id, usando o arquivo `request.body`. Faz o upload do arquivo recebido do Insomnia (quando tiver). E responde com uma mensagem de sucesso.   |
+| PUT    | /categories/:id | Atualiza algum dado específico da categoria, a partir do id, usando o arquivo `request.body`. Faz o upload do arquivo recebido do Insomnia (quando tiver). E responde com uma mensagem de sucesso.| 
 
 
 ## Middlewares
@@ -507,7 +510,6 @@ name: Yup.string(),
        
 ~
 
-
 ## Models
 
 Responsável pela leitura e escrita de dados. Auxiliar na interface da aplicação com o banco de dados.
@@ -587,4 +589,4 @@ static associate(models){
 ~
 
 ## Status do projeto
-:construction: O projeto está em andamento. 
+:heavy_check_mark: Aplicação back-end finalizada. 
