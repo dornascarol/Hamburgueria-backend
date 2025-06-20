@@ -1,15 +1,15 @@
-<h1> Backend da Hamburgueria :hamburger:🛒 </h1>
+<h1> Burger Shop Backend :hamburger:🛒 </h1>
 <br>
 
-<h2> Este foi o projeto que aprendi no curso do DevClub </h2>
-<p> Usuário pode se cadastrar na aplicação, escolher os pedidos e verificar o carrinho de compras. </p>
+<h2> This was the project I learned in the DevClub course </h2>
+<p> User can register in the application, choose orders and check the shopping cart. </p>
 
-<h2> Introdução </h2>
-Aplicação com intenção de simular um sistema de compras em um estabelecimento alimentício. O usuário pode se cadastrar e logar com seus dados de e-mail e senha. Depois de logado e com o token autenticado, a página inicial com os produtos da loja fica visível para escolher variedades de hambúrgueres e complementos. Por fim, pode clicar no carrinho. 
+<h2> Introduction </h2>
+Application intended to simulate a purchasing system in a food establishment. The user can register and log in with their email and password. After logging in and authenticating the token, the home page with the store's products becomes visible to choose varieties of burgers and toppings. Finally, the user can click on the shopping cart.
 
-Além de um painel administrativo onde o representante do estabelecimento consegue ver todos os pedidos e seus status atualizados. 
+In addition to an administrative panel where the establishment representative can see all orders and their updated status.
 
-## Tecnologias utilizadas
+## Technologies used
 * VS Code
 * Insomnia
 * Yarn
@@ -29,198 +29,198 @@ Além de um painel administrativo onde o representante do estabelecimento conseg
   
   
 
-## Ferramentas
-Na aplicação foi utilizado o <a href="https://nodejs.org/en/download" target="_blank" > Node.JS </a>  na versão 18.14.0 em LTS.
+## Tools
+The application used <a href="https://nodejs.org/en/download" target="_blank" > Node.JS</a>  version 18.14.0 in LTS.
 
 ~
 
-O <a href="https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable" target="_blank" > Yarn </a> na versão 1.22.19
+<a href="https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable" target="_blank" > Yarn</a> in version 1.22.19
 
-:small_orange_diamond: `npm install -g yarn` ou `sudo npm install -g yarn` 
-
-~
-
-O <a href="https://www.docker.com/get-started/" target="_blank" > Docker </a> na configuração para computador 4.21.1 e versão 24.0.2
-
+:small_orange_diamond: `npm install -g yarn` or `sudo npm install -g yarn` 
 
 ~
 
-O <a href="https://github.com/Paxa/postbird" target="_blank"> Postbird </a> na versão instalada em Postbird.Setup.0.8.4.exe
+<a href="https://www.docker.com/get-started/" target="_blank" > Docker</a> in the configuration for computer 4.21.1 and version 24.0.2
+
 
 ~
 
-O <a href="https://sequelize.org/docs/v6/getting-started/" target="_blank"> Sequelize </a> na versão 6.32.1
+The <a href="https://github.com/Paxa/postbird" target="_blank"> Postbird</a> in the version installed at Postbird.Setup.0.8.4.exe
+
+~
+
+<a href="https://sequelize.org/docs/v6/getting-started/" target="_blank"> Sequelize</a> in version 6.32.1
 
 :small_orange_diamond: `yarn add sequelize`
 
 ~
 
-Foi usado o programa <a href="https://insomnia.rest/download" target="_blank" > Insomnia </a> para testar as requisições das rotas simulando o Front-end.
+The program <a href="https://insomnia.rest/download" target="_blank" > Insomnia</a> was used to test route requests by simulating the Front-end.
 
 ~
 
-O <a href="https://www.mongodb.com/try/download/compass" target="_blank" > MongoDB Compass </a> (GUI) na configuração do computador versão 1.40.4 (Estável).
+The <a href="https://www.mongodb.com/try/download/compass" target="_blank" > MongoDB Compass</a> (GUI) in Computer Setup version 1.40.4 (Stable).
 
 ~
 
-## Dependências 
-Framework <a href="https://yarnpkg.com/package?name=express" target="_blank" > Express </a> na versão 4.18.2 
+## Dependencies
+Framework <a href="https://yarnpkg.com/package?name=express" target="_blank" > Express</a> in version 4.18.2
 
 :small_orange_diamond: `yarn add express`
 
 ~
 
-Biblioteca <a href="https://yarnpkg.com/package?name=uuidv4" target="_blank" > UUID </a> do tipo v.4 e na versão 9.0.0
+Library <a href="https://yarnpkg.com/package?name=uuidv4" target="_blank" > UUID</a> of type v.4 and in version 9.0.0
 
 :small_orange_diamond: `yarn add uuid`
 
 ~
 
-Biblioteca <a href="https://github.com/jquense/yup" target="_blank"> Yup </a> na versão 1.2.0
+<a href="https://github.com/jquense/yup" target="_blank"> Yup</a> library in version 1.2.0
 
 :small_orange_diamond: `yarn add yup`
 
 ~
 
-Biblioteca <a href="https://yarnpkg.com/package?name=bcrypt" target="_blank"> Bcrypt </a> na versão 5.1.0 
+<a href="https://yarnpkg.com/package?name=bcrypt" target="_blank"> Bcrypt</a> library in version 5.1.0
 
 :small_orange_diamond: `yarn add bcrypt`
 
 ~
 
-Biblioteca <a href="https://github.com/expressjs/multer" target="_blank" > Multer </a> na versão 1.4.5-1ts.1
+Library <a href="https://github.com/expressjs/multer" target="_blank" > Multer</a> in version 1.4.5-1ts.1
 
 :small_orange_diamond: `yarn add multer`
 
 ~
 
-Biblioteca <a href="https://yarnpkg.com/package?name=jsonwebtoken" target="_blank"> JWT </a> na versão 9.0.2
+<a href="https://yarnpkg.com/package?name=jsonwebtoken" target="_blank"> JWT</a> library in version 9.0.2
 
 :small_orange_diamond: `yarn add jsonwebtoken`
 
 ~
 
-Biblioteca <a href="https://yarnpkg.com/package?name=mongoose" target="_blank"> Mongoose </a> na versão 7.6.1
+<a href="https://yarnpkg.com/package?name=mongoose" target="_blank"> Mongoose</a> library in version 7.6.1
 
 :small_orange_diamond: `yarn add mongoose`
 
 ~
 
-## Dependências de desenvolvimento
-O <a href="https://classic.yarnpkg.com/en/package/nodemon" target="_blank" > Nodemon </a> na versão 3.0.1
+## Development dependencies
+<a href="https://classic.yarnpkg.com/en/package/nodemon" target="_blank" > Nodemon</a> in version 3.0.1
 
 :small_orange_diamond: `yarn add nodemon -D`
   
-Criado um script no `package.json` para o nodemon: "dev".
+Created a script in `package.json` for nodemon: "dev".
 
 ~
 
-O <a href="https://yarnpkg.com/package?name=sucrase" target="_blank"> Sucrase </a> na versão 3.33.0
+<a href="https://yarnpkg.com/package?name=sucrase" target="_blank"> Sucrase</a> in version 3.33.0
 
 :small_orange_diamond: `yarn add sucrase -D`
 
 ~
 
-O <a href="https://yarnpkg.com/package?name=eslint" target="_blank"> Eslint </a> na versão 8.0.1
+<a href="https://yarnpkg.com/package?name=eslint" target="_blank"> Eslint</a> in version 8.0.1
 
 :small_orange_diamond: `yarn add eslint -D`
 
 ~
 
-O <a href="https://yarnpkg.com/package?name=prettier" target="_blank"> Prettier </a> nas versões 8.8.0 e 5.0.0
+<a href="https://yarnpkg.com/package?name=prettier" target="_blank"> Prettier</a> in versions 8.8.0 and 5.0.0
 
 :small_orange_diamond: `yarn add prettier eslint-config-prettier eslint-plugin-prettier -D`
 
 ~
 
-O <a href="https://yarnpkg.com/package?name=sequelize-cli" target="_blank"> Sequelize-cli </a> na versão 6.6.1
+<a href="https://yarnpkg.com/package?name=sequelize-cli" target="_blank"> Sequelize-cli</a> in version 6.6.1
 
 :small_orange_diamond: `yarn add sequelize-cli -D`
 
 ~
 
-## Rodando o projeto
-- Para rodar o repositório é necessário clonar o mesmo.
+## Running the project
+- To run the repository it is necessary to clone it.
   
-- Pra inicar escreva no terminal:
+- To start, type in the terminal:
 ```
 npm init -y
 ```
 
-- Após instaladas as dependências, dê o comando seguinte para rodar a aplicação do servidor:
+- After installing the dependencies, issue the following command to run the server application:
 ```
 yarn dev
 ```
 
-- Parar de rodar o servidor: no terminal clicar nas teclas de "Ctrl" e "C".
+- Stop running the server: in the terminal, click the "Ctrl" and "C" keys.
   
 
-- Para debugar:
+- To debug:
 ```
 yarn debug
 ```
 
-- Para usar o Sequelize com o PostgreSQL, precisa instalar:
+- To use Sequelize with PostgreSQL, you need to install:
 ```
 yarn add pg pg-hstore
 ```
 
-- Para rodar a Migration:
+- To run Migration:
 ```
 yarn sequelize db:migrate
 ```
 
-- Para desfazer todas as Migrations:
+- To undo all Migrations:
 ```
 yarn sequelize db:migrate:undo:all
 ```
 
-- Para rodar o banco de dados relacional PostgreSQL:
+- To run the PostgreSQL relational database:
 ```
 docker start codeburguer-postgres
 ```
 
-- Para derrubar o banco de dados relacional PostgreSQL:
+- To bring down the PostgreSQL relational database:
 ```
 docker stop codeburguer-postgres
 ```
 
-- Utilizei o Insomnia para realizar as requisições desejadas.
+- I used Insomnia to perform the desired requests.
   
 
-- Para rodar o banco de dados não relacional MongoDB:
+- To run the MongoDB non-relational database:
 ```
 docker start mongo
 ```
 
-- Para derrubar o banco de dados não relacional MongoDB:
+- To take down the MongoDB non-relational database:
 ```
 docker stop mongo
 ```
 ~
 
 ## Endpoints
-<p> Caminho da URL: http://localhost:3000 </p>
+<p> URL path: http://localhost:3000 </p>
 
-| Método | URL             | Descrição                                                                                                                                                                                         |
-| ------ | --------------  | ------------------------------------------------------------------------------------------------------                                                                                            |
-| POST   | /users          | Cria um usuário usando as informações enviadas dentro do arquivo `request.body`.                                                                                                                  |
-| POST   | /sessions       | Verifica se o e-mail e senha correspondem com as informações do usuário cadastrado no banco de dados.                                                                                             |
-| POST   | /products       | Cria um produto usando as informações enviadas dentro do arquivo `request.body`. E faz o upload do arquivo recebido do Insomnia.                                                                  |
-| GET    | /products       | Procura todos os produtos no banco de dados da tabela `products`. E retorna um JSON da lista com todos os dados dos produtos.                                                                     |
-| POST   | /categories     | Cria uma categoria usando a informação enviada dentro do arquivo `request.body` com token. E faz o upload do arquivo recebido do Insomnia.                                                        |
-| GET    | /categories     | Procura todas as categorias no banco de dados da tabela `categories`. E retorna um JSON da lista com todos os dados das categorias.                                                               |
-| POST   | /orders         | Cria um pedido usando as informações enviadas dentro do arquivo `request.body` com token atualizado.                                                                                              |
-| GET    | /orders         | Procura todos os pedidos no banco de dados. Sem o body e com token atualizado. E retorna um JSON da lista com informações de `user, products e status`.                                           |
-| PUT    | /orders/:id     | Atualiza o status específico do pedido, a partir do id, usando o arquivo `request.body`. E responde com uma mensagem de sucesso.                                                                  |
-| PUT    | /products/:id   | Atualiza algum dado específico do pedido, a partir do id, usando o arquivo `request.body`. Faz o upload do arquivo recebido do Insomnia (quando tiver). E responde com uma mensagem de sucesso.   |
-| PUT    | /categories/:id | Atualiza algum dado específico da categoria, a partir do id, usando o arquivo `request.body`. Faz o upload do arquivo recebido do Insomnia (quando tiver). E responde com uma mensagem de sucesso.| 
+| Method | URL             | Description                                                                                                                                                                   |
+| ------ | --------------  | ------------------------------------------------------------------------------------------------------                                                                        |
+| POST   | /users          | Create a user using the information sent within the `request.body` file.                                                                                                      |
+| POST   | /sessions       | Check whether the email and password match the user information registered in the database.                                                                                   |
+| POST   | /products       | Create a product using the information sent inside the `request.body` file. And uploads the file received from Insomnia.                                                      |
+| GET    | /products       | Searche for all products in the database in the `products` table. And returns a JSON list with all product data.                                                              |
+| POST   | /categories     | Create a category using the information sent inside the `request.body` file with token. And uploads the file received from Insomnia.                                          |
+| GET    | /categories     | Searche for all categories in the database in the `categories` table. And returns a JSON list with all category data.                                                         |
+| POST   | /orders         | Create a request using the information sent inside the `request.body` file with updated token.                                                                                |
+| GET    | /orders         | Searche for all orders in the database. Without the body and with an updated token. And returns a JSON of the list with information about `user, products and status`.        |
+| PUT    | /orders/:id     | Update the specific order status, from the id, using the `request.body` file. And responds with a success message.                                                            |
+| PUT    | /products/:id   | Update some specific request data, from the id, using the `request.body` file. Uploads the file received from Insomnia (if available). And responds with a success message.   |
+| PUT    | /categories/:id | Update some category-specific data, from the id, using the `request.body` file. Uploads the file received from Insomnia (if available). And responds with a success message.  | 
 
 
 ## Middlewares
-Serve como interceptador. 
+Serves as an interceptor.
 
-Assim que o usuário tentar acessar a rota, faz uma validação da informação se está correta ou se está incorreta.
+As soon as the user tries to access the route, the information is validated to see if it is correct or incorrect.
 
 ```js
 middlewares() {
@@ -239,36 +239,36 @@ routes() {
 ```
 ~
 
-##### Usando JWT:
+##### Using JWT:
 
 ```js
 export default(request, response, next) => {
     const authToken = request.headers.authorization
 ```
 
-- Se o usuário não mandar um _token_:
+- If the user does not send a _token_:
 
-  - Responde status HTTP com o código `401` (Unauthorized)
-  - Retorna o seguinte JSON: `{ error: 'Token não fornecido' }`
+  - Respond to HTTP status with code `401` (Unauthorized)
+  - Return the following JSON: `{ error: 'Token not provided' }`
+    
+- If the user sends a wrong _token_:
 
-- Se o usuário mandar um _token_ errado:
+  - Respond to HTTP status with code `401` (Unauthorized)
+  - Return the following JSON: `{ error: 'Invalid token' }`
 
-  - Responde status HTTP com o código `401` (Unauthorized)
-  - Retorna o seguinte JSON: `{ error: 'Token inválido' }`
+- If the user sends a valid _token_:
 
-- Se o usuário mandar um _token_ válido:
-
-  - Retorna o JSON com todas as informações dos produtos da tabela do banco de dados. Acesso autorizado para a rota.
+  - Return the JSON with all the product information from the database table. Authorized access for the route.
  
 ~
 
 ## Migrations
-Serve para criações de tabelas para o banco de dados. E para modificá-las.
+It is used to create tables for the database and to modify them.
 
-Precisa estar, primeiramente, com o Docker rodando. 
-E em seguida, precisa rodar a Migration. 
+First, you need to have Docker running. 
+And then you need to run Migration. 
 
-- Criação da Tabela de Usuários:
+- Creating the User Table:
   - id
   - name
   - email
@@ -279,7 +279,7 @@ E em seguida, precisa rodar a Migration.
 
  ~
 
- - Criação da Tabela de Produtos:
+ - Creating the Product Table:
    - id
    - name
    - price
@@ -290,7 +290,7 @@ E em seguida, precisa rodar a Migration.
 
 ~
 
-- Criação da Tabela de Categorias:
+- Creating the Category Table:
    - id
    - name
    - path
@@ -299,30 +299,30 @@ E em seguida, precisa rodar a Migration.
 
 ~
 
-- Deletar campo na tabela:
-  - Remover coluna _category_ que está na Tabela de Produtos
+- Delete field in table:
+  - Remove _category_ column from Products Table
 
 ~  
 
-- Criar campo na tabela:
-  - Adicionar coluna _category_id_ na Tabela de Produtos
+- Create field in table:
+  - Add _category_id_ column in Products Table
  
 ~
 
-- Acrescentar campo na tabela:
-  - Adicionar coluna _offer_ na Tabela de Produtos
+- Add field to table:
+  - Add _offer_ column in Products Table
 
 ~
 
-- Acrescentar campo na tabela:
-  - Adicionar coluna _path_ na Tabela de Categorias
+- Add field to table:
+  - Add _path_ column in Categories Table
 
 ~
 
 ## Controllers
-Padrão do objeto que espero receber no Insomnia.
+Pattern of the object I expect to receive in Insomnia.
 
-##### Schema do User para criação do usuários:
+##### User Schema for creating users:
 
 ```js
 name: Yup.string().required(),
@@ -331,43 +331,43 @@ password: Yup.string().required().min(6),
 admin: Yup.boolean(),
 ```
 
-- Se encontrar algum dado _inválido_:
+- If you find any _invalid_ data:
 
-  - Responde status HTTP com o código `400` (Bad Request)
-  - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+  - Respond to HTTP status with code `400` (Bad Request)
+  - Return the error reason(s) in JSON format: `{ error: err.errors }`
 
-- Se encontrar um _email_ já existente:
+- If you find an existing _email_:
 
-  - Responde status HTTP com o código `400` (Bad Request)
-  - Retorna o seguinte JSON: `{ error: 'E-mail já cadastrado' }`
+  - Respond to HTTP status with code `400` (Bad Request)
+  - Return the following JSON: `{ error: 'Email already registered' }`
  
-- Criando com sucesso um _usuário_:
+- Successfully creating a _user_:
 
-  - Responde status HTTP com o código `201` (Created)
-  - Retorna o seguinte JSON: `{ id: user.id, name, email, admin  }`
+  - Respond to HTTP status with code `201` (Created)
+  - Return the following JSON: `{ id: user.id, name, email, admin }`
     
 ~
 
-##### Schema do Session para fazer o login do usuário:
+##### Session Schema for user login:
 
 ```js
 email: Yup.string().email().required(),
 password: Yup.string().required(),
 ```
 
-- Se não encontrar o _email_ ou _senha_ do usuário:
+- If you can't find the user's _email_ or _password_:
 
-  - Responde status HTTP com o código `400` (Bad Request)
-  - Retorna o seguinte JSON: `{ error: 'Email ou senha incorreto' }`
+  - Respond to HTTP status with code `400` (Bad Request)
+  - Return the following JSON: `{ error: 'Incorrect email or password' }`
 
-- Encontrando com sucesso _email_ e _senha_ do usuário:
+- Successfully finding user's _email_ and _password_:
 
-  - Responde status HTTP com o código `200` (OK)
-  - Retorna o seguinte JSON: `{id: user.id, email, name: user.name, admin: user.admin, token: jwt.sign }`
+  - Respond to HTTP status with code `200` (OK)
+  - Return the following JSON: `{id: user.id, email, name: user.name, admin: user.admin, token: jwt.sign }`
     
 ~
 
-##### Schema do Product para criação de produtos:
+##### Product Schema for creating products:  
 
 ```js
 name: Yup.string().required(),
@@ -377,56 +377,56 @@ offer: Yup.boolean(),
 
 ```
 
-- Se encontrar algum dado _inválido_:
+- If you find any _invalid_ data:
 
-    - Responde status HTTP com o código `400` (Bad Request)
-    - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+    - Respond to HTTP status with code `400` (Bad Request)
+    - Return the error reason(s) in JSON format: `{ error: err.errors }`
  
-- Criando com sucesso um _produto_:
+- Successfully creating a _product_:
 
-  - Responde status HTTP com o código `200` (OK)
-  - Retorna o seguinte JSON: `{ id, name, price, category_id, path, updated_at, created_at, offer }`
+  - Respond to HTTP status with code `200` (OK)
+  - Return the following JSON: `{ id, name, price, category_id, path, updated_at, created_at, offer }`
     
-- Encontrando todos os _produtos_ cadastrados:
+- Finding all registered _products_:
   
-    - Responde status HTTP com o código `200` (OK)
-    - Retorna o seguinte JSON: `{ url, id, name, price, path, updated_at, created_at, category_id: category: { id, name }, offer }`
+    - Respond to HTTP status with code `200` (OK)
+    - Return the following JSON: `{ url, id, name, price, path, updated_at, created_at, category_id: category: { id, name }, offer }`
 
-- Se encontrar um usuário que não seja _admin_:
+- If you encounter a user that is not _admin_:
 
-  - Responde status HTTP com o código `401` (Unauthorized)
+  - Respond to HTTP status with code `401` (Unauthorized)
            
 ~
 
-##### Schema do Category para criação de categorias:
+##### Category Schema for creating categories:
 
 ```js
 name: Yup.string().required(),
 
 ```
 
-- Se encontrar algum dado _inválido_:
+- If you find any _invalid_ data:
 
-    - Responde status HTTP com o código `400` (Bad Request)
-    - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+    - Respond to HTTP status with code `400` (Bad Request)
+    - Return the error reason(s) in JSON format: `{ error: err.errors }`
       
-- Se encontrar alguma _categoria_ repetida:
+- If you find any repeated _categories_:
 
-    - Responde status HTTP com o código `400` (Bad Request)
-    - Retorna o erro no formato JSON: `{ error: 'Categoria já existe' }`
+    - Respond to HTTP status with code `400` (Bad Request)
+    - Return the error in JSON format: `{ error: 'Category already exists' }`
  
-- Criando com sucesso uma _categoria_:
+- Successfully creating a _category_:
 
-  - Responde status HTTP com o código `200` (OK)
-  - Retorna o seguinte JSON: `{ name, id }`
+  - Respond to HTTP status with code `200` (OK)
+  - Return the following JSON: `{ name, id }`
 
-- Se encontrar um usuário que não seja _admin_:
+- If you encounter a user that is not _admin_:
 
-  - Responde status HTTP com o código `401` (Unauthorized)
+  - Respond to HTTP status with code `401` (Unauthorized)
        
 ~
 
-##### Schema do Order para criação de pedidos:
+##### Order Schema for creating orders:
 
 ```js
 products: Yup.array().required().of(
@@ -437,23 +437,23 @@ products: Yup.array().required().of(
             )
 ```
 
-- Se encontrar algum dado _inválido_:
+- If you find any _invalid_ data:
 
-    - Responde status HTTP com o código `400` (Bad Request)
-    - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+    - Respond to HTTP status with code `400` (Bad Request)
+    - Return the error reason(s) in JSON format: `{ error: err.errors }`
  
-- Criando com sucesso um _pedido_:
+- Successfully creating an _order_:
 
-  - Responde status HTTP com o código `201` (Created)
-  - Retorna o seguinte JSON: `{ id: product.id, name: product.name, price: product.price, category: product.category.name, url: product.url, quantity: request.body.products[productIndex].quantity }`
+  - Respond to HTTP status with code `201` (Created)
+  - Return the following JSON: `{ id: product.id, name: product.name, price: product.price, category: product.category.name, url: product.url, quantity: request.body.products[productIndex].quantity }`
 
-- Se encontrar um usuário que não seja _admin_:
+- If you encounter a user that is not _admin_:
 
-  - Responde status HTTP com o código `401` (Unauthorized)
+  - Responds to HTTP status with code `401` (Unauthorized)
     
 ~
 
-##### Schema do Product para atualizações de produtos:
+##### Product Schema for product updates:
 
 ```js
 name: Yup.string(),
@@ -463,58 +463,58 @@ offer: Yup.boolean(),
 
 ```
 
-- Se encontrar algum dado _inválido_:
+- If you find any _invalid_ data:
 
-    - Responde status HTTP com o código `400` (Bad Request)
-    - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+    - Respond to HTTP status with code `400` (Bad Request)
+    - Return the error reason(s) in JSON format: `{ error: err.errors }`
  
-- Alterando com sucesso um _produto_:
+- Successfully changing a _product_:
 
-  - Responde status HTTP com o código `200` (OK)
+  - Respond to HTTP status with code `200` (OK)
 
-- Se encontrar um usuário que não seja _admin_:
+- If you encounter a user that is not _admin_:
 
-  - Responde status HTTP com o código `401` (Unauthorized)
+  - Respond to HTTP status with code `401` (Unauthorized)
 
-- Se não encontrar algum _produto_ pelo ID:
+- If you can't find a _product_ by ID:
   
-    - Responde status HTTP com o código `401` (Unauthorized)
-    - Retorna o seguinte JSON: `{ error: 'Verifique se o ID do seu produto está correto' }`
+    - Respond to HTTP status with code `401` (Unauthorized)
+    - Return the following JSON: `{ error: 'Please check that your product ID is correct' }`
       
 ~
 
-##### Schema do Category para atualizações de categorias:
+##### Category Schema for category updates:
 
 ```js
 name: Yup.string(),
 
 ```
 
-- Se encontrar algum dado _inválido_:
+- If you find any _invalid_ data:
 
-    - Responde status HTTP com o código `400` (Bad Request)
-    - Retorna o(s) motivo(s) do(s) erro(s) no formato JSON: `{ error: err.errors }`
+    - Respond to HTTP status with code `400` (Bad Request)
+    - Return the error reason(s) in JSON format: `{ error: err.errors }`
       
-- Se não encontrar alguma _categoria_ pelo ID:
+- If you can't find any _category_ by ID:
 
-    - Responde status HTTP com o código `401` (Unauthorized)
-    - Retorna o erro no formato JSON: `{ error: 'Verifique se o ID da sua categoria está correto' }`
+    - Respond to HTTP status with code `401` (Unauthorized)
+    - Return the error in JSON format: `{ error: 'Please check that your category ID is correct' }`
  
-- Alterando com sucesso uma _categoria_:
+- Successfully changing a _category_:
 
-  - Responde status HTTP com o código `200` (OK)
+  - Respond to HTTP status with code `200` (OK)
 
-- Se encontrar um usuário que não seja _admin_:
+- If you encounter a user that is not _admin_:
 
-  - Responde status HTTP com o código `401` (Unauthorized)
+  - Respond to HTTP status with code `401` (Unauthorized)
        
 ~
 
 ## Models
 
-Responsável pela leitura e escrita de dados. Auxiliar na interface da aplicação com o banco de dados.
+Responsible for reading and writing data. Assist in the application's interface with the database.
 
-##### Método static init no User
+##### Static init method in User
 
 ```js
 super.init({
@@ -531,7 +531,7 @@ super.init({
 
 ~
 
-##### Método static init no Product
+##### Static init method on Product
 
 ```js
 super.init(
@@ -554,7 +554,7 @@ super.init(
 
 ~
 
-##### Método static init no Category
+##### Static init method in Category
 
 ```js
 super.init(
@@ -575,7 +575,7 @@ super.init(
 
 ~
 
-##### Método static associate no Product
+##### Static associate method on Product
 
 ```js
 static associate(models){
@@ -588,5 +588,5 @@ static associate(models){
 
 ~
 
-## Status do projeto
-:heavy_check_mark: Aplicação back-end finalizada. 
+## Project status
+:heavy_check_mark: Back-end application completed. 
